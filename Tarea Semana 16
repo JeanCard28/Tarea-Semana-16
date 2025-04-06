@@ -2,13 +2,13 @@
 file_path = r'C:\Users\JeanCard\Desktop\my_notes.txt'
 # Crear un archivo y escribir al menos tres líneas de notas personales
 with open(file_path, 'w') as file:
-    file.write("Primera nota: Hoy es un día soleado.\n")
-    file.write("Segunda nota: Estoy aprendiendo a trabajar con archivos en Python.\n")
-    file.write("Tercera nota: Estoy disfrutando del proceso de aprendizaje.\n")
+    file.write("Hola, soy Jean Carlos Delgado.\n")
+    file.write("Tengo 21 años.\n")
+    file.write("Vivo es la ciudad de Santo Domingo.\n")
 
 # Lectura de archivo de texto
 with open(file_path, 'r') as file:
     lines = file.readlines()
-
-# Mostrar las líneas leídas
-lines
+# Mostrar las líneas leídas en la consola
+for line in lines:
+    print(line.strip())  # Usamos strip() para eliminar los saltos de línea al mostrar
